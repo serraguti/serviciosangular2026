@@ -1,0 +1,13 @@
+<div>
+    <h2>Jugadores JSON</h2>
+    <input type="file"
+    (change)="onFileSelected($event)"/>
+    <h1>Número: {{jugadores.length}}</h1>
+    <div style="float:left">
+        @for (jugador of jugadores; track jugador){
+            <p>{{jugador.nombre}}, posición: {{jugador.posicion}}</p>
+            <img src="{{jugador.imagen}}"
+            style="width: 100px; height: 120px;"/>
+        }
+    </div>
+</div>

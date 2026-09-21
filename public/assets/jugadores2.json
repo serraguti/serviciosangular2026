@@ -1,0 +1,68 @@
+	[
+				{
+					"nombre": "Gerardo Piqué Bernabeu",
+					"posicion": "Defensa central",
+					"edad": 28,
+					"imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/J%C3%A9r%C3%A9my_Mathieu_18102014_%28cropped%29.jpg/250px-J%C3%A9r%C3%A9my_Mathieu_18102014_%28cropped%29.jpg"
+				},
+				{
+					"nombre": "Mathieu",
+					"posicion": "Lateral Izquierdo",
+					"edad": 23, 
+					"imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/J%C3%A9r%C3%A9my_Mathieu_18102014_%28cropped%29.jpg/250px-J%C3%A9r%C3%A9my_Mathieu_18102014_%28cropped%29.jpg"
+				},
+				{
+					"nombre": "Amunike",
+					"posicion": "Lateral Derecho",
+					"edad": 31, 
+					"imagen": "https://cope-cdnmed.agilecontent.com/resources/jpg/0/9/1531395122790.jpg"
+				},
+				{
+					"nombre": "Rochemback",
+					"posicion": "Mediocentro",
+					"edad": 22,
+					"imagen": "https://as01.epimg.net/futbol/imagenes/2017/09/27/primera/1506501533_123725_1506501608_sumario_normal.jpg"
+				},
+				{
+					"nombre": "Chygrynskiy",
+					"posicion": "Defensa central",
+					"edad": 30, 
+					"imagen": "https://as.com/futbol/imagenes/2017/06/27/mas_futbol/1498578431_883779_1498578525_noticia_normal.jpg"
+				},				
+				{
+					"nombre": "Iniesta",
+					"posicion": "Volante Derecho",
+					"edad": 30, 
+					"imagen": "https://as.com/futbol/imagenes/2017/06/27/mas_futbol/1498578431_883779_1498578525_noticia_normal.jpg"
+				},
+				{
+					"nombre": "Neymar",
+					"posicion": "Volante Izquierdo",
+					"edad": 24, 
+					"imagen": "https://as.com/futbol/imagenes/2017/06/27/mas_futbol/1498578431_883779_1498578525_noticia_normal.jpg"
+				},
+				{
+					"nombre": "Messi",
+					"posicion": "Delantero total",
+					"edad": 28,
+					"imagen": "https://i.ytimg.com/vi/m6pKCg-Tx-g/maxresdefault.jpg"
+				},
+				{
+					"nombre": "Bogarde",
+					"posicion": "Extremo Derecho",
+					"edad": 26, 
+					"imagen": "https://as.com/futbol/imagenes/2017/06/27/mas_futbol/1498578431_883779_1498578525_noticia_normal.jpg"
+				},
+				{
+					"nombre": "Luis Suarez",
+					"posicion": "Delantero Centro",
+					"edad": 30, 
+					"imagen": "https://as.com/futbol/imagenes/2017/06/27/mas_futbol/1498578431_883779_1498578525_noticia_normal.jpg"
+				},
+				{
+					"nombre": "Griezmann",
+					"posicion": "Extremo Izquierdo",
+					"edad": 28, 
+					"imagen": "https://as.com/futbol/imagenes/2017/06/27/mas_futbol/1498578431_883779_1498578525_noticia_normal.jpg"
+				}				
+	]

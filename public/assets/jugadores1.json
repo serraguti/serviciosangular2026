@@ -1,0 +1,62 @@
+	[
+				{
+					"nombre": "Keylor Navas",
+					"posicion": "Portero",
+					"edad": 28
+					, "imagen": "https://as01.epimg.net/us/imagenes/2019/10/13/futbol/1571000082_277473_1571000359_noticia_normal_recorte1.jpg"
+				},
+				{
+					"nombre": "Sergio Ramos",
+					"posicion": "Defensa central",
+					"edad": 29
+					, "imagen": "https://as.com/tikitakas/imagenes/2019/02/23/portada/1550919555_521513_1550919850_noticia_normal.jpg"
+				},
+				{
+					"nombre": "Gravesen",
+					"posicion": "La Gravesinha",
+					"edad": 29
+					, "imagen": "https://media.vandalsports.com/i/640x360/9-2017/2017922121441_1.jpg"
+				},				
+				{
+					"nombre": "Marcelo",
+					"posicion": "Lateral Izquierdo",
+					"edad": 27
+					, "imagen": "https://okdiario.com/img/2018/12/20/marcelo-navidad-interior-655x368.jpg"
+				},
+				{
+					"nombre": "Royston Drenthe",
+					"posicion": "Lateral Izquierdo",
+					"edad": 27
+					, "imagen": "https://media.vandalsports.com/m/9-2017/201792212836_2.jpg"
+				},
+				{
+					"nombre": "Secretario",
+					"posicion": "Lateral derecho",
+					"edad": 27
+					,"imagen": "https://media.vandalsports.com/m/9-2017/2017922121033_5.jpg"
+				},
+								{
+					"nombre": "Hamit Altintop",
+					"posicion": "Ni su entrenador la sabe...",
+					"edad": 27,
+					"imagen": "https://media.vandalsports.com/m/9-2017/2017922121258_5.jpg"
+				},	
+				{
+					"nombre": "Pablo García",
+					"posicion": "Medio asesino",
+					"edad": 27
+					, "imagen": "https://as.com/futbol/imagenes/2005/09/07/mas_futbol/1126044005_740215_0000000001_noticia_grande.jpg"
+				},
+				{
+					"nombre": "Carvajal",
+					"posicion": "Lateral Derecho",
+					"edad": 23,
+					"imagen": "https://www.realmadrid.com/img/vertical_380px/carvajal_380x501_20190923060815.jpg"
+				},
+				{
+					"nombre": "Varane",
+					"posicion": "Defensa central",
+					"edad": 22
+					, "imagen": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/11/06/15415134518299.jpg"
+				}
+	]
