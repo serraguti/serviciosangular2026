@@ -1,6 +1,10 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
+import { firstValueFrom, Observable } from "rxjs";
+import { Persona } from "../models/persona";
+import axios from "axios";
+import { Global } from "../global";
+import { environment } from "../../environments/environment.development";
 
 @Injectable()
 export class ServicePersonas {
@@ -10,7 +14,7 @@ export class ServicePersonas {
     //SI DEVOLVEMOS LA PETICION, SE UTILIZA UN TIPADO 
     //DE Observable<any>
     getPersonas(): Observable<any>{
-        let urlApi = "https://servicioapipersonasmvcpgs.azurewebsites.net/api/personas";
+        let urlApi = environment.urlApiPersonas;
         //DEVOLVEMOS LA PETICION DIRECTAMENTE PARA QUE LA TRATE EL COMPONENT
         return this._http.get(urlApi);
     }
@@ -27,5 +31,26 @@ export class ServicePersonas {
         })
         return promise;
     }
+
+    async getPersonasPromiseAsync(): Promise<Persona[]>{
+        let urlApi = "https://servicioapipersonasmvcpgs.azurewebsites.net/api/personas";
+        return firstValueFrom(this._http.get<Persona[]>(urlApi));        
+    }
     
+    getPersonasAxios(): Promise<any>{
+        let urlApi = "https://servicioapipersonasmvcpgs.azurewebsites.net/api/personas";
+        let promise = new Promise(function(resolve){
+            axios.get(urlApi).then((response) => {
+                resolve(response.data);
+            })
+        })   
+        return promise;  
+    }
+    
+    async getPersonasAxiosAsync(): Promise<any>{
+        let urlApi = "https://servicioapipersonasmvcpgs.azurewebsites.net/api/personas";
+        //CAPTURAR LA RESPUESTA
+        const response = await axios.get(urlApi);
+        return response.data;
+    }
 }
