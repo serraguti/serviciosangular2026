@@ -1,16 +1,27 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit } from '@angular/core';
 import { Jugador } from '../../models/jugador';
+import { ServiceJugadores } from '../../services/service.jugadores';
 @Component({
   selector: 'app-readfilesjugador-component',
   standalone: false,
   styleUrl: './readfilesjugador-component.css',
   templateUrl: './readfilesjugador-component.html',
 })
-export class ReadfilesjugadorComponent {
+export class ReadfilesjugadorComponent implements OnInit {
   public jugadores: Array<Jugador>;
 
-  constructor(private _cdr: ChangeDetectorRef){
+  constructor
+  (private _cdr: ChangeDetectorRef,
+    private _service: ServiceJugadores
+  ){
     this.jugadores = [];
+  }
+
+  async ngOnInit(): Promise<void> {
+    console.log("Ng Init");
+    //LAS PETICIONES SE REALIZAN CON await
+    this.jugadores = await this._service.getJugadoresAsync();
+    this._cdr.detectChanges();
   }
 
   onFileSelected(event: any): void {

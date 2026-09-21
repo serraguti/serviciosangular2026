@@ -5,11 +5,12 @@ import { App } from './app';
 import { HomeComponent } from './components/home-component/home-component';
 import { ReadfilesjugadorComponent } from './components/readfilesjugador-component/readfilesjugador-component';
 import { MenuComponent } from './components/menu-component/menu-component';
+import { ServiceJugadores } from './services/service.jugadores';
 
 @NgModule({
   declarations: [App, HomeComponent, ReadfilesjugadorComponent, MenuComponent],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [provideBrowserGlobalErrorListeners()],
+  providers: [provideBrowserGlobalErrorListeners(), ServiceJugadores],
   bootstrap: [App],
 })
 export class AppModule {}
