@@ -6,11 +6,25 @@ import { HomeComponent } from './components/home-component/home-component';
 import { ReadfilesjugadorComponent } from './components/readfilesjugador-component/readfilesjugador-component';
 import { MenuComponent } from './components/menu-component/menu-component';
 import { ServiceJugadores } from './services/service.jugadores';
+import { provideHttpClient } from '@angular/common/http';
+import { ServicePersonas } from './services/service.personas';
+import { PersonasApiComponent } from './components/personas-api-component/personas-api-component';
 
 @NgModule({
-  declarations: [App, HomeComponent, ReadfilesjugadorComponent, MenuComponent],
+  declarations: [
+    App,
+    HomeComponent,
+    ReadfilesjugadorComponent,
+    MenuComponent,
+    PersonasApiComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [provideBrowserGlobalErrorListeners(), ServiceJugadores],
+  providers: [
+    provideBrowserGlobalErrorListeners(),
+    ServicePersonas,
+    ServiceJugadores,
+    provideHttpClient(),
+  ],
   bootstrap: [App],
 })
 export class AppModule {}
