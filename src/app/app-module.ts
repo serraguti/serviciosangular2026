@@ -9,6 +9,7 @@ import { ServiceJugadores } from './services/service.jugadores';
 import { provideHttpClient } from '@angular/common/http';
 import { ServicePersonas } from './services/service.personas';
 import { PersonasApiComponent } from './components/personas-api-component/personas-api-component';
+import { CochesApiComponent } from './components/coches-api-component/coches-api-component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PersonasApiComponent } from './components/personas-api-component/person
     ReadfilesjugadorComponent,
     MenuComponent,
     PersonasApiComponent,
+    CochesApiComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [
