@@ -5,12 +5,14 @@ import { ReadfilesjugadorComponent } from './components/readfilesjugador-compone
 import { PersonasApiComponent } from './components/personas-api-component/personas-api-component';
 import { CochesApiComponent } from './components/coches-api-component/coches-api-component';
 import { PlantillaFuncionSimple } from './components/plantilla-funcion-simple/plantilla-funcion-simple';
+import { PlantillaFuncionMultiple } from './components/plantilla-funcion-multiple/plantilla-funcion-multiple';
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "jugadores", component: ReadfilesjugadorComponent},
   {path: "personas", component: PersonasApiComponent},
   {path: "coches", component: CochesApiComponent},
   { path: "plantillasimple", component: PlantillaFuncionSimple},
+  { path: "plantillamultiple", component: PlantillaFuncionMultiple},
 ];
 
 @NgModule({
