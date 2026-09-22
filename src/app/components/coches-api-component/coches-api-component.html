@@ -1,1 +1,23 @@
-<p>coches-api-component works!</p>
+<div>
+    <h1>Coches Api</h1>
+    <button (click)="getCochesPromise()">
+        Coches Promise
+    </button>
+    <button (click)="getCochesObservable()">
+        Coches Observable
+    </button>
+    <button (click)="getCochesAsync()">
+        Coches async/await
+    </button>   
+    <button (click)="limpiarDatos()">
+        Limpiar datos
+    </button>        
+    <hr/>
+    @for (car of cochesArray; track car){
+        <h2 style="color:blue">
+            {{car.marca}} {{car.modelo}}
+        </h2>
+        <img src="{{car.imagen}}"
+        style="width:120px; height: 120px;"/>
+    }
+</div>

@@ -10,7 +10,10 @@ import { provideHttpClient } from '@angular/common/http';
 import { ServicePersonas } from './services/service.personas';
 import { PersonasApiComponent } from './components/personas-api-component/personas-api-component';
 import { CochesApiComponent } from './components/coches-api-component/coches-api-component';
-
+import { ServiceCoches } from './services/service.coches';
+import { PlantillaFuncionSimple } from './components/plantilla-funcion-simple/plantilla-funcion-simple';
+import { ServicePlantilla } from './services/service.plantilla';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     App,
@@ -19,12 +22,16 @@ import { CochesApiComponent } from './components/coches-api-component/coches-api
     MenuComponent,
     PersonasApiComponent,
     CochesApiComponent,
+    PlantillaFuncionSimple,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule
+    , FormsModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
     ServicePersonas,
     ServiceJugadores,
+    ServiceCoches,
+    ServicePlantilla ,
     provideHttpClient(),
   ],
   bootstrap: [App],

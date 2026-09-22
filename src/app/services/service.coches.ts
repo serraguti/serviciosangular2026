@@ -19,4 +19,15 @@ export class ServiceCoches{
         let request = "webresources/coches";
         return firstValueFrom(this._http.get<Coche[]>(url + request));
     }
+
+    getCochesPromise(): Promise<any>{
+        let url = environment.urlApiCoches;
+        let request = "webresources/coches";
+        let promise = new Promise((resolve) => {
+            this._http.get(url + request).subscribe(response => {
+                resolve(response);
+            })
+        })
+        return promise;
+    }
 }
